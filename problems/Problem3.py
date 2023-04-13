@@ -7,7 +7,13 @@ What is the largest prime factor of the number 600851475143 ?
 """
 
 
-# Using successive division method
+"""
+Method to get the prime factors of a number using successive division method
+- Args:
+    param1: The number from which to obtain the prime factors
+- Returns:
+    res: The list of prime factors of param1
+"""
 def getPrimeFactors(num):
     res = []
     i = 2
@@ -21,4 +27,5 @@ def getPrimeFactors(num):
     res.append(num)
     return res
 
+# Print max value of the list with the prime factors of 600851475143
 print (max(getPrimeFactors(600851475143)))
