@@ -8,6 +8,13 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 """
 
 
+"""
+Method to obtain the even numbers of the Fibonacci sequence below a limit value
+- Args:
+    param1: The limit value of the Fibonacci sequence
+- Returns:
+    res: The list with the even numbers of the Fibonacci sequence below a limit value
+"""
 def evenValuedFibonacciBelowNumber(limit):
     res = []
     fib0 = 1
@@ -20,13 +27,24 @@ def evenValuedFibonacciBelowNumber(limit):
             res.append(fib1)
     return res
 
+"""
+Method to get the sum of all the numbers of a list
+- Args:
+    param1: The list of numbers to sum
+- Returns:
+    res: The sum of all the elements of the list
+"""
 def sumListNumbers(list):
     res = 0
     for i in list:
         res = res + i
     return res
 
+# Get the even numbers of the Fibonacci sequence below 4000000
 evenValuedFibonacci = evenValuedFibonacciBelowNumber(4000000)
-print (evenValuedFibonacci)
+
+# Sum the numbers in the list of even numbers of the Fibonacci sequence below 4000000 got in the previous line
 sumFibonacci = sumListNumbers(evenValuedFibonacci)
+
+# Print result
 print (sumFibonacci)
