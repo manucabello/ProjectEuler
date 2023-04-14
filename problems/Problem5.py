@@ -36,11 +36,15 @@ Method to get the LCM (Low Commun Multiple) of all numbers up to the limit value
 """
 def getLCM(limit):
     res = 1
+
+    # Descompose all numbers from 2 to 20 into prime factors and save them in the primeFactors list (will be a list of lists)
     primeFactors = []
     i = 2
     while i <= limit:
         primeFactors.append(getPrimeFactors(i))
         i = i + 1
+
+    # Get commons and uncommons prime factors with the greatest exponent and save them in the mcm dictionary (key: prime factor / value: exponent)
     mcm = {}
     for numFactor in primeFactors:
         for factor in numFactor:
@@ -48,8 +52,11 @@ def getLCM(limit):
                 mcm.update({factor: max(numFactor.count(factor), mcm[factor])})
             else:
                 mcm.update({factor: numFactor.count(factor)})
+
+    # Multiply the commons and uncommons prime factors with the greatest exponent
     for key in mcm:
         res = res * (key**mcm[key])
+
     return res
 
 # Print the LCM of the numbers from 1 to 20
