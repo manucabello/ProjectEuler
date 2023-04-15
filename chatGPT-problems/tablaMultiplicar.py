@@ -8,6 +8,13 @@ en una nueva línea. Por ejemplo, el resultado de la multiplicación de 2x3 debe
 resultado de la multiplicación de 4x5 debe imprimirse en otra línea.
 """
 
+"""
+Method to print all multiplication tables
+- Args:
+    None
+- Returns:
+    None
+"""
 def tablaMultiplicar():
     i = 1
     while i <= 10:

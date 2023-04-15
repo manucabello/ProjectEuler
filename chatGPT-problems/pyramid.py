@@ -12,6 +12,15 @@ al número de la fila. Por ejemplo, si el usuario introduce 5, el patrón debe v
 *****
 """
 
+
+"""
+Method to print a pyramid of asterisks
+- Args:
+    param1: the number of files
+- Returns:
+    True: If the method ends with success
+    False: If the param1 (num) is not a integer
+"""
 def pyramid(num):
     if type(num) == int:
         lista = list(range(0,num))
