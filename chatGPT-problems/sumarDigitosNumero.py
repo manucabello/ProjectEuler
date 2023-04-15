@@ -10,6 +10,14 @@ Por ejemplo, si el usuario ingresa el número 12345, el programa debe calcular l
 El programa debe imprimir en pantalla la suma de los dígitos del número ingresado.
 """
 
+
+"""
+Method to sum all digits of a number
+- Args:
+    param1: Number to sum its digits
+- Returns:
+    res: The sum of the digits of the number
+"""
 def sumaDigitos(num):
     res = 0
     while num > 0:
