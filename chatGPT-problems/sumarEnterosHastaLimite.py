@@ -23,7 +23,7 @@ def sumaEnterosHastaLimite(num):
         i = 2
         while i <= num:
             res = res + i
-            i = i + 1
+            i = i + 2
         return res
     else:
         print("El número ingresado debe ser mayor o igual a 2.")
